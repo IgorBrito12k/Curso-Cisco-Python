@@ -172,4 +172,52 @@ print("O maior número é:", maiorNumero)
 
 # Pseudocódigo e introdução aos loops
  
- 
+maiorNumero = -999999999
+number = int(input())
+if number == -1:
+    print(maiorNumero)
+    exit()
+if number > maiorNumero:
+    maiorNumero = number
+# Ir para a linha 02
+
+
+# LAB - Operadores de comparação e execução condicional
+
+name = input("Insira o nome da flor: ")
+
+if name == "Spathiphyllum":
+    print("Sim - Spathiphyllum é a melhor planta de todos os tempos!")
+elif name == "spathiphyllum":
+    print("Não, eu quero uma grande Spathiphyllum!")
+else:
+    print("Spathiphyllum! Não", name + "!")
+
+# LAB - Essenciais da declaração if-else
+
+income = float(input("Entre com os rendimentos anuais "))
+
+if income < 85528:
+ tax = income * 0.18 - 556.02
+# Escreve o resto do código aqui.
+
+tax = round(tax, 0) #round arredonda
+print("A taxa é:", tax, "thalers") 
+
+# LAB   Essenciais da declaração if-elif-else
+
+year = int(input("Digite um ano: "))
+
+if year < 1582:
+ print("Não dentro do período do calendário gregoriano")
+else:
+   if year % 4 != 0:
+     print("ano comum")
+   elif year % 100 != 0:
+     print("Ano bissexto")
+   elif year % 400 != 0:
+     print("ano comum")
+   else:
+     print("Ano bissexto") 
+
+     
